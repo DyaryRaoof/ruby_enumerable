@@ -1,4 +1,4 @@
-require_relative 'my_enumerable';
+require_relative 'my_enumerable'
 
 class MyList
   def initialize(*list)
@@ -11,5 +11,5 @@ class MyList
     end
   end
 
-  include MyEnumerable;
+  include MyEnumerable
 end

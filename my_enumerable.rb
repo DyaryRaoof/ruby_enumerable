@@ -18,9 +18,7 @@ module MyEnumerable
   def filter
     array = []
     @list.each do |li|
-      if yield li
-        array.push(li)
-      end
+      array.push(li) if yield li
     end
     array
   end
