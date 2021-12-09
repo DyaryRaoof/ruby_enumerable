@@ -1,17 +1,15 @@
 require_relative 'my_enumerable';
 
+class MyList
+  def initialize(*list)
+    @list = list
+  end
 
-
-class MyList 
-    def initialize(*list)
-        @list = list
+  def each
+    @list.each do |li|
+      puts li
     end
+  end
 
-    def each 
-        @list.each do |li|
-            puts li
-        end
-    end
-
-    include MyEnumerable;
+  include MyEnumerable;
 end
