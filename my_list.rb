@@ -1,5 +1,9 @@
+require_relative 'my_enumerable';
+
+
+
 class MyList 
-    def initialize(list)
+    def initialize(*list)
         @list = list
     end
 
@@ -8,4 +12,6 @@ class MyList
             puts li
         end
     end
+
+    include MyEnumerable;
 end
